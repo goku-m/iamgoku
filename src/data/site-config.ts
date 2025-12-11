@@ -8,8 +8,8 @@ const siteConfig: SiteConfig = {
         src: avatar,
         alt: 'Ethan Donovan'
     },
-    title: 'Hi, I\'m Goku',
-    subtitle: 'Not like the Super Saiyan, but i\'m special in my own way...',
+    title: "Hi, I'm Goku",
+    subtitle: "Not like the Super Saiyan, but i'm special in my own way...",
     description: '',
     image: {
         src: '/dante-preview.jpg',
@@ -20,13 +20,18 @@ const siteConfig: SiteConfig = {
             text: 'Home',
             href: '/'
         },
+
+        {
+            text: 'Study',
+            href: '/blog'
+        },
+        {
+            text: 'Thoughts',
+            href: '/blog'
+        },
         {
             text: 'Projects',
             href: '/projects'
-        },
-        {
-            text: 'Blog',
-            href: '/blog'
         }
     ],
     footerNavLinks: [
