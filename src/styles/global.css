@@ -10,7 +10,7 @@
 
 :root {
     --text-main: #171717;
-    --bg-main:#27272;
+    --bg-main:#F4F4F5;
     --bg-muted: #eae9e1;
     --border-main: #171717;
 }
@@ -86,7 +86,7 @@ html.dark {
     }
 
     .prose :where(h1, h2, h3, h4, h5, h6) {
-        @apply font-serif font-medium;
+        @apply font-sans font-medium;
     }
 
     .prose :where(code, strong) {
@@ -94,6 +94,6 @@ html.dark {
     }
 
     .prose blockquote {
-        @apply font-serif font-normal italic border-none pl-0 text-[1.375em] leading-snug sm:text-[1.66667em];
+        @apply font-sans font-normal italic border-none pl-0 text-sm leading-snug sm:text-sm;
     }
 }

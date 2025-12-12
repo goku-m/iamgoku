@@ -3,7 +3,7 @@ import { type CollectionEntry } from 'astro:content';
 import ArrowRight from '../assets/icons/arrow-right.svg';
 import FormattedDate from './FormattedDate.astro';
 
-type Props = { post: CollectionEntry<'blog'>; class?: string; headingLevel?: 'h4' | 'h5' };
+type Props = { post: CollectionEntry<'blog'>; class?: string; headingLevel?: 'h3' | 'h5' };
 
 const { post, class: className, headingLevel = 'h3' } = Astro.props;
 const { title, publishDate, updatedDate, excerpt } = post.data;
