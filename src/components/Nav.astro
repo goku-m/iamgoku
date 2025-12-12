@@ -14,7 +14,7 @@ const navLinks = siteConfig.headerNavLinks ?? [];
                  <!-- Added site name / brand -->
                 <a 
                     href="/" 
-                    class="text-main font-serif text-xl md:text-xl font-bold hover:underline"
+                    class="text-main  text-xl md:text-xl font-bold hover:underline"
                 >
                     Goku
                 </a>
@@ -26,7 +26,7 @@ const navLinks = siteConfig.headerNavLinks ?? [];
                     {navLinks.map((link) => (
                         <li class="py-1">
                             <NavLink
-                                class="text-main font-serif text-md hover:underline hover:decoration-1 hover:underline-offset-2 md:text-base"
+                                class="text-main  text-sm hover:underline hover:decoration-1 hover:underline-offset-2 md:text-base"
                                 href={link.href}
                             >
                                 {link.text}
