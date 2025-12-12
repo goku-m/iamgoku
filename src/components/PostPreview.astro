@@ -1,6 +1,5 @@
 ---
 import { type CollectionEntry } from 'astro:content';
-import ArrowRight from '../assets/icons/arrow-right.svg';
 import FormattedDate from './FormattedDate.astro';
 
 type Props = { post: CollectionEntry<'blog'>; class?: string; headingLevel?: 'h3' | 'h5' };
@@ -11,24 +10,23 @@ const TitleTag = headingLevel;
 ---
 
 <a class:list={['group flex items-start justify-between gap-8', className]} href={`/blog/${post.id}/`}>
-<div class="grow">
-  <div class="flex items-center justify-between">
-    <TitleTag
-      class="font-sans text-sm leading-tight group-hover:text-slate-500 sm:text-sm"
-    >
-      {title}
-    </TitleTag>
+    <div class="grow">
+        <div class="flex items-center justify-between">
+            <TitleTag class="font-sans text-sm leading-tight group-hover:text-slate-500 sm:text-sm">
+                {title}
+            </TitleTag>
 
-    <div class="text-xs leading-normal ml-4 whitespace-nowrap">
-      <FormattedDate date={publishDate} />
-      {updatedDate && (
-        <span>
-          {' '} (Updated on <FormattedDate date={updatedDate} />)
-        </span>
-      )}
+            <div class="ml-4 text-xs leading-normal whitespace-nowrap">
+                <FormattedDate date={publishDate} />
+                {
+                    updatedDate && (
+                        <span>
+                            {' '}
+                            (Updated on <FormattedDate date={updatedDate} />)
+                        </span>
+                    )
+                }
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-
-    
 </a>
