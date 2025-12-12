@@ -50,10 +50,10 @@ const siteConfig: SiteConfig = {
         // }
     ],
     socialLinks: [
-        {
-            text: 'Github',
-            href: 'https://github.com/goku-m'
-        }
+        // {
+        //     text: 'Github',
+        //     href: 'https://github.com/goku-m'
+        // }
         // {
         //     text: 'Instagram',
         //     href: 'https://instagram.com/'
