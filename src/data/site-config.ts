@@ -22,13 +22,10 @@ const siteConfig: SiteConfig = {
         },
 
         {
-            text: 'Study',
+            text: 'Notes',
             href: '/blog'
         },
-        {
-            text: 'Thoughts',
-            href: '/blog'
-        },
+      
         {
             text: 'Projects',
             href: '/projects'
