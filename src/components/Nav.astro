@@ -36,10 +36,11 @@ const navLinks = siteConfig.headerNavLinks ?? [];
                         </li>
                     ))}
                 </ul>
+                   <div class="absolute top-0 right-0 z-10 md:top-0">
+        <ThemeToggle />
+    </div>
             </div>
         )
     }
-    <div class="absolute top-4 right-0 z-10 md:top-8">
-        <ThemeToggle />
-    </div>
+ 
 </nav>

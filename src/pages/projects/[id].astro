@@ -31,13 +31,13 @@ const { Content } = await render(project);
 <BaseLayout title={seo?.title ?? title} description={seo?.description ?? description} image={seo?.image} pageType="article" showHeader={false}>
     <article class="mb-16 sm:mb-24">
         <header class="mb-8">
-            <h1 class="font-sans text-3xl leading-tight font-medium sm:text-5xl sm:leading-tight">{title}</h1>
+            <h1 class="font-sans text-xl leading-tight font-semibold sm:text-xl sm:leading-tight">{title}</h1>
         </header>
-        <div class="prose sm:prose-lg max-w-none">
+     <div class="prose prose-sm sm:prose-sm max-w-none ">
             <Content />
         </div>
     </article>
-    {
+    <!-- {
         (prevProject || nextProject) && (
             <div class="my-16 sm:my-24">
                 <h2 class="mb-12 font-sans text-xl italic sm:mb-16 sm:text-2xl">View Next</h2>
@@ -45,5 +45,5 @@ const { Content } = await render(project);
                 {prevProject && <ProjectPreview project={prevProject} class="mb-10 sm:mb-12" headingLevel="h3" />}
             </div>
         )
-    }
+    } -->
 </BaseLayout>

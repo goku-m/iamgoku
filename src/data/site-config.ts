@@ -9,7 +9,7 @@ const siteConfig: SiteConfig = {
         alt: 'Ethan Donovan'
     },
     title: "Hi, I'm Goku",
-    subtitle: "Not like the Super Saiyan, but i'm special in my own way...",
+    subtitle: "Im very curious, i enjoy solving problems and i love to know how things work. ",
     description: '',
     image: {
         src: '/dante-preview.jpg',
