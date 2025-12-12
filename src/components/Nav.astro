@@ -1,7 +1,7 @@
 ---
+import siteConfig from '../data/site-config';
 import NavLink from './NavLink.astro';
 import ThemeToggle from './ThemeToggle.astro';
-import siteConfig from '../data/site-config';
 
 const navLinks = siteConfig.headerNavLinks ?? [];
 ---
@@ -12,12 +12,14 @@ const navLinks = siteConfig.headerNavLinks ?? [];
             <div class="relative mx-auto w-full max-w-3xl">
 
                  <!-- Added site name / brand -->
+                 <div class="mb-6">
                 <a 
                     href="/" 
-                    class="text-main  text-xl md:text-xl font-bold hover:underline"
+                    class="text-main  text-xl md:text-xl font-bold "
                 >
-                    Goku
+                    悟 Goku
                 </a>
+                 </div>
 
                 <ul
                     id="menu-items"

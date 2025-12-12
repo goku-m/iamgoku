@@ -19,22 +19,13 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
     {
         featuredPosts?.length > 0 && (
             <div class="mb-16 sm:mb-16">
-                <h2 class="mb-8 font-sans text-l italic sm:mb-8 sm:text-l">What Im Studying</h2>
-                {featuredPosts.map((post) => (
-                    <PostPreview post={post} class="mb-10 sm:mb-12" headingLevel="h3" />
-                ))}
-                <div class="mt-6 sm:mt-6">
-                    <Button href="/blog">See All</Button>
+                <div class="mb-2 inline-flex items-center justify-center rounded-full bg-slate-200 px-3 py-1 transition-colors">
+                    <a href="/blog" class="font-sans text-sm font-bold text-slate-500 italic sm:text-sm">
+                        Notes
+                    </a>
                 </div>
-            </div>
-        )
-    }
-        {
-        featuredPosts?.length > 0 && (
-            <div class="mb-16 sm:mb-16">
-                <h2 class="mb-8 font-sans text-l italic sm:mb-8 sm:text-l">My Thoughts</h2>
                 {featuredPosts.map((post) => (
-                    <PostPreview post={post} class="mb-10 sm:mb-12" headingLevel="h3" />
+                    <PostPreview post={post} class="mb-6 sm:mb-6" headingLevel="h3" />
                 ))}
                 <div class="mt-6 sm:mt-6">
                     <Button href="/blog">See All</Button>
@@ -43,9 +34,16 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
         )
     }
     {
+       
+    }
+    {
         featuredProjects?.length > 0 && (
             <div class="mb-16 sm:mb-24">
-                <h2 class="mb-8 font-sans text-l italic sm:mb-8 sm:text-l">Projects</h2>
+                    <div class="mb-2 inline-flex items-center justify-center rounded-full bg-slate-200 px-3 py-1 transition-colors">
+                    <a href="/projects" class="font-sans text-sm font-bold text-slate-500 italic sm:text-sm">
+                        Projects
+                    </a>
+                </div>
                 {featuredProjects.map((project) => (
                     <ProjectPreview project={project} class="mb-10 sm:mb-12" headingLevel="h3" />
                 ))}
